@@ -1,22 +1,26 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Download from "../sections/download"
+import Facts from "../sections/facts"
+import Features from "../sections/features"
+import Hero from "../sections/hero"
 import "../components/styles.scss"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p className="title is-2">Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const IndexPage = () => {
+  const downloadRef = React.createRef()
+  const executeScrollToDownload = () => {
+    window.scrollTo({ left: 0, top: downloadRef.current.offsetTop, behavior: 'smooth' })
+  }
+
+  return (
+    <Layout>
+      <Hero scrollToDownload={executeScrollToDownload} />
+      <Features />
+      <Facts />
+      <Download scrollToDownloadRef={downloadRef} />
+    </Layout>
+  )
+}
 
 export default IndexPage
