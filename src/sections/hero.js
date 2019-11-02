@@ -1,4 +1,5 @@
 import React from "react"
+import Typed from 'react-typed';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons"
 
@@ -16,7 +17,20 @@ const Hero = (props) => {
                 className="is-size-2 has-text-weight-semibold">Wikipedia,</span>
               </h1>
               <p className="subtitle has-text-warning">
-                the most powerful Wikipedia experience built for Windows 10
+                an intuitive and powerful Wikipedia experince built for
+                <br />
+              <Typed
+                strings={[
+                  'those who want to look something up.',
+                  'those who want to learn something new.',
+                  'those who want to go down the rabbit hole.',
+                  'those who always want to be right.',
+                  'all Windows 10 devices.'
+                ]}
+                startDelay={350}
+                typeSpeed={50}
+                backSpeed={25}>
+              </Typed>
               </p>
             </div>
             <button className="button is-primary is-large is-inverted is-rounded" onClick={props.scrollToDownload}>
