@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
               <div className="level-item">
                 <div className="buttons is-right is-uppercase are-small">
                   <Link to="/donate" className="button is-outlined">Donate</Link>
-                  <Link to="/changelog" className="button is-outlined">Release notes</Link>
+                  <Link to="/releases" className="button is-outlined">Release notes</Link>
                   <a className="button is-outlined">Imprint</a>
                 </div>
               </div>

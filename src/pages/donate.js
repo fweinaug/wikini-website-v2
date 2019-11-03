@@ -36,9 +36,9 @@ const DonatePage = () => (
             </div>
           </div>
           <Link to="/" className="button is-primary is-light is-small">
-          <span className="icon is-small">
-            <FontAwesomeIcon icon={faArrowLeft} />
-          </span>
+            <span className="icon is-small">
+              <FontAwesomeIcon icon={faArrowLeft} />
+            </span>
             <span>Go back</span>
           </Link>
         </div>
