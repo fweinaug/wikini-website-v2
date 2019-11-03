@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import Download from "../sections/download"
 import Facts from "../sections/facts"
 import Features from "../sections/features"
@@ -15,6 +16,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <SEO title="Home" />
       <Hero scrollToDownload={executeScrollToDownload} />
       <Features />
       <Facts />
