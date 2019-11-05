@@ -16,7 +16,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO />
       <Hero scrollToDownload={executeScrollToDownload} />
       <Features />
       <Facts />

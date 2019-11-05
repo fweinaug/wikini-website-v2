@@ -10,7 +10,7 @@ import Changelog from "../sections/changelog"
 
 const ReleasesPage = () => (
   <Layout>
-    <SEO title="Release notes" />
+    <SEO title="Releases" />
     <section className="hero is-primary is-bold">
       <div className="hero-body">
         <div className="container">

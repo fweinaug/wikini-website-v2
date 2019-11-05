@@ -17,7 +17,7 @@ const Hero = (props) => {
                 className="is-size-2 has-text-weight-semibold">Wikipedia,</span>
               </h1>
               <p className="subtitle has-text-warning">
-                an intuitive and powerful Wikipedia experince built for
+                an intuitive and powerful Wikipedia experience built for
                 <br />
               <Typed
                 strings={[
@@ -25,7 +25,7 @@ const Hero = (props) => {
                   'those who want to learn something new.',
                   'those who want to go down the rabbit hole.',
                   'those who always want to be right.',
-                  'all Windows 10 devices.'
+                  'all your Windows 10 devices.'
                 ]}
                 startDelay={350}
                 typeSpeed={50}
