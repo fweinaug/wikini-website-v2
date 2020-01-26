@@ -22,11 +22,10 @@ const DonatePage = () => (
               <h2 className="subtitle">
                 When I started the project more than two years ago, I consciously decided to offer the app for free and without any ads.
                 This will never change, even though a lot of work goes into the development of Wikini for Wikipedia.
-                But to keep developing Wikini in the future, adding new features, and improving existing ones, a small donation from you would be very much appreciated!
+                To keep developing Wikini in the future, adding new features, and improving existing ones, a small tip from you would be very much appreciated!
               </h2>
             </div>
             <div className="column has-text-centered">
-              <p className="is-marginless has-text-weight-semibold">Donate:</p>
               <a className="button is-link is-medium is-rounded"
                  href="https://www.paypal.me/FlorianWeinaug/10" target="_blank" rel="noopener noreferrer">
                 <span className="icon is-small">
