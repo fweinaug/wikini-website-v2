@@ -1,3 +1,13 @@
+const generateFavicons = (sizes) => {
+  return sizes.map(size => {
+    return {
+      src: `favicons/icon-${size}x${size}.png`,
+      sizes: `${size}x${size}`,
+      type: "image/png",
+    };
+  });
+};
+
 module.exports = {
   siteMetadata: {
     title: `Wikini for Wikipedia`,
@@ -42,6 +52,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/wikini-icon.png`,
+        icons: generateFavicons([48, 72, 96, 144, 192, 256, 384, 512]),
       },
     },
     `gatsby-plugin-sass`,
