@@ -16,7 +16,7 @@ const Features = () => {
           node {
             name
             childImageSharp {
-              fluid(maxWidth: 400) {
+              fluid(maxWidth: 400, quality: 100) {
                 aspectRatio
                 ...GatsbyImageSharpFluid
               }

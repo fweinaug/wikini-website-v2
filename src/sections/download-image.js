@@ -7,7 +7,7 @@ const DownloadImage = () => {
     query {
       placeholderImage: file(relativePath: { eq: "laptop.png" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 400, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
