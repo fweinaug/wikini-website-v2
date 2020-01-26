@@ -32,7 +32,7 @@ const Download = (props) => {
           <div className="content">
             <p className="is-marginless has-text-weight-semibold">Download:</p>
             <a className="button is-link is-medium"
-               href="https://www.microsoft.com/store/apps/9nkvw50h59sl" target="_blank"
+               href="https://www.microsoft.com/store/apps/9nkvw50h59sl" target="_blank" rel="noopener noreferrer"
                title="Download Wikini for your Windows 10 device, today.">
                 <span className="icon is-small">
                   <FontAwesomeIcon icon={faWindows} />

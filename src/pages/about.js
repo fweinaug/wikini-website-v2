@@ -69,7 +69,7 @@ const AboutPage = () => (
           </p>
           <hr />
           <p className="has-text-weight-light">
-            Source: <a href="http://www.translate-24h.de" target="_blank">translate-24h Englisch Translations</a>
+            Source: <a href="http://www.translate-24h.de" target="_blank" rel="noopener noreferrer">translate-24h Englisch Translations</a>
           </p>
         </div>
       </div>

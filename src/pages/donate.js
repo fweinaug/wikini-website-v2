@@ -27,7 +27,8 @@ const DonatePage = () => (
             </div>
             <div className="column has-text-centered">
               <p className="is-marginless has-text-weight-semibold">Donate:</p>
-              <a href="https://www.paypal.me/FlorianWeinaug/10" target="_blank" className="button is-link is-medium is-rounded">
+              <a className="button is-link is-medium is-rounded"
+                 href="https://www.paypal.me/FlorianWeinaug/10" target="_blank" rel="noopener noreferrer">
                 <span className="icon is-small">
                   <FontAwesomeIcon icon={faPaypal} />
                 </span>
