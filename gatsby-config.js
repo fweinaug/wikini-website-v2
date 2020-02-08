@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: '@bcgov/gatsby-source-github-raw',
       options: {
-        githubAccessToken: 'c90f665cef9de66bb02c45884c66e4054510e35a',
+        githubAccessToken: `${process.env.GITHUB_ACCESS_TOKEN}`,
         files: [
           'https://github.com/fweinaug/wikini/blob/master/src/WikipediaApp/WikipediaApp/Data/versions.json',
           'https://github.com/fweinaug/wikini/blob/master/src/WikipediaApp/WikipediaApp/Data/en/changelog.json',

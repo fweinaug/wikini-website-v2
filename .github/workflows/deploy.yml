@@ -1,0 +1,25 @@
+name: Deploy
+
+on: [push, repository_dispatch]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Gatsby Build
+      uses: jzweifel/gatsby-cli-github-action@master
+      env:
+        GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+      with:
+        gatsby-arg: build
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      env:
+        FTP_SERVER: ${{ secrets.FtpServer }}
+        FTP_USERNAME: ${{ secrets.FtpUsername }}
+        FTP_PASSWORD: ${{ secrets.FtpPassword }}
+        REMOTE_DIR: /public_html/wikini
+        LOCAL_DIR: public
