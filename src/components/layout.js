@@ -14,9 +14,9 @@ const Layout = ({ children }) => {
           <nav className="level">
             <div className="level-left">
               <div className="level-item">
-                <div className="content">
+                <div className="content has-text-centered">
                   Wikini is built with <span className="has-text-danger">❤</span> in Hamburg by <a
-                  href="http://florianweinaug.de">Florian Weinaug</a>
+                  href="http://florianweinaug.de">Florian Weinaug</a>
                 </div>
               </div>
             </div>
