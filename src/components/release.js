@@ -9,11 +9,11 @@ const Release = (props) => (
       <p className="subtitle has-text-grey has-text-weight-medium is-6">
         Released: {props.date}
       </p>
-      <dl className="has-text-weight-light">
+      <ul className="has-text-weight-light">
         {props.changes.map((change, index) => (
           <li key={index}>{change}</li>
         ))}
-      </dl>
+      </ul>
     </div>
   </div>
 )
