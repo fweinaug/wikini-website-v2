@@ -12,10 +12,10 @@ const Download = (props) => {
       <div className="columns">
         <div className="column is-two-thirds">
           <div className="content is-medium">
-            <p>
+            <p className="has-text-weight-light">
               A better and powerful Wikipedia experience is just a click away.
               <br />
-              Get Wikini for Wikipedia on Windows 10 today.
+              Get <span className="has-text-weight-semibold has-text-primary">Wikini for Wikipedia</span> on Windows 10 today.
             </p>
           </div>
           <div className="tags are-medium">
@@ -29,7 +29,7 @@ const Download = (props) => {
               Ever.
             </span>
           </div>
-          <div className="content">
+          <div className="content has-text-centered">
             <p className="is-marginless has-text-weight-semibold">Download:</p>
             <a className="button is-link is-medium"
                href="https://www.microsoft.com/store/apps/9nkvw50h59sl" target="_blank" rel="noopener noreferrer"
