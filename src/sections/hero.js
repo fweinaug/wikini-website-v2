@@ -10,7 +10,7 @@ const Hero = (props) => {
     <div className="hero-body">
       <div className="container">
         <div className="columns is-vcentered">
-          <div className="column">
+          <div className="column has-text-centered-mobile">
             <div className="content is-large">
               <h1 className="title has-text-weight-bold">
                 Wikini <span className="is-size-2 has-text-weight-light">for </span> <span
