@@ -1,4 +1,4 @@
-name: Deploy
+name: deploy-website
 
 on: [push, repository_dispatch]
 
