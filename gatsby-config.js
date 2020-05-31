@@ -12,7 +12,9 @@ module.exports = {
   siteMetadata: {
     title: `Wikini for Wikipedia`,
     description: `Wikini, the best Wikipedia experience on Windows 10`,
-    author: `@schwatzgelber`,
+    url: `http://wikiniapp.com`,
+    image: `/cover.jpg`,
+    author: `@fweinaug`,
   },
   plugins: [
     {

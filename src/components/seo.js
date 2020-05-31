@@ -18,6 +18,8 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
+            siteUrl: url
+            image
             author
           }
         }
@@ -25,30 +27,41 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
-  const titleTemplate = title ? `%s | ${site.siteMetadata.title}` : site.siteMetadata.description
-
-  title = title || site.siteMetadata.title
+  const seo = {
+    title: title || site.siteMetadata.title,
+    titleTemplate: title ? `%s | ${site.siteMetadata.title}` : site.siteMetadata.description,
+    description: description || site.siteMetadata.description,
+    image: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`,
+    author: site.siteMetadata.author
+  }
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={titleTemplate}
+      title={seo.title}
+      titleTemplate={seo.titleTemplate}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: seo.description,
+        },
+        {
+          name: `image`,
+          content: seo.image,
         },
         {
           property: `og:title`,
-          content: title,
+          content: seo.title,
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: seo.description,
+        },
+        {
+          property: `og:image`,
+          content: seo.image,
         },
         {
           property: `og:type`,
@@ -60,15 +73,19 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: seo.author,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: seo.title,
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: seo.description,
+        },
+        {
+          name: `twitter:image`,
+          content: seo.image,
         },
       ].concat(meta)}
     />
