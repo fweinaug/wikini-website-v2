@@ -2,8 +2,8 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircle, faSquare } from "@fortawesome/free-solid-svg-icons"
 
-function Fact({ title, description, icon, iconSquare = false }) {
-  return <article className="tile is-child box" style={{position:'relative', paddingBottom: '3.5rem'}}>
+const Fact = ({ title, description, icon, iconSquare = false }) => (
+  <article className="tile is-child box" style={{position:'relative', paddingBottom: '3.5rem'}}>
     <p className="title has-text-primary">{title}</p>
     <p className="subtitle has-text-weight-light">{description}</p>
     <div className="" style={{position: 'absolute', bottom: '15px', left: '50%', marginLeft: '-1.5rem'}}>
@@ -15,6 +15,6 @@ function Fact({ title, description, icon, iconSquare = false }) {
       </span>
     </div>
   </article>
-}
+)
 
 export default Fact

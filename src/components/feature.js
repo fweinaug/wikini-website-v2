@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 
-function Feature({ title, description, image = null, children }) {
+const Feature = ({ title, description, image = null, children }) => {
   const hasImage = image !== null;
 
   return <article className={ hasImage ? 'tile is-child' : 'tile is-child notification' }>
