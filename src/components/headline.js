@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 const Headline = ({ title, subtitle }) => (
   <div className="content has-text-centered is-medium">
@@ -6,5 +7,10 @@ const Headline = ({ title, subtitle }) => (
     <p>{subtitle}</p>
   </div>
 )
+
+Headline.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+}
 
 export default Headline

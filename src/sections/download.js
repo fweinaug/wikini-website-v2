@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faWindows } from "@fortawesome/free-brands-svg-icons"
 
@@ -47,6 +48,10 @@ const Download = (props) => {
       </div>
     </div>
   </section>
+}
+
+Download.propTypes = {
+  scrollToDownloadRef: PropTypes.shape({ current: PropTypes.any }).isRequired,
 }
 
 export default Download

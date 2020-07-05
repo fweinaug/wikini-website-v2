@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 const Feature = ({ title, description, image = null, children }) => {
@@ -12,6 +13,13 @@ const Feature = ({ title, description, image = null, children }) => {
     <p className="subtitle">{description}</p>
     {children}
   </article>
+}
+
+Feature.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  image: PropTypes.object,
+  children: PropTypes.node,
 }
 
 export default Feature

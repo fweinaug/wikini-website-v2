@@ -1,5 +1,6 @@
 import React from "react"
-import Typed from 'react-typed';
+import PropTypes from "prop-types"
+import Typed from "react-typed"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons"
 
@@ -47,6 +48,10 @@ const Hero = (props) => {
       </div>
     </div>
   </section>
+}
+
+Hero.propTypes = {
+  scrollToDownload: PropTypes.func.isRequired,
 }
 
 export default Hero

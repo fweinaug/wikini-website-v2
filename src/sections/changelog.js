@@ -47,5 +47,4 @@ const Changelog = () => {
   )
 }
 
-
 export default Changelog

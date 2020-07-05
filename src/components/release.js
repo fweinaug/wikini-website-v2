@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 const Release = ({ version, date, changes }) => (
   <div className="notification">
@@ -17,5 +18,11 @@ const Release = ({ version, date, changes }) => (
     </div>
   </div>
 )
+
+Release.propTypes = {
+  version: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  changes: PropTypes.arrayOf(PropTypes.string).isRequired,
+}
 
 export default Release

@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircle, faSquare } from "@fortawesome/free-solid-svg-icons"
 
@@ -16,5 +17,12 @@ const Fact = ({ title, description, icon, iconSquare = false }) => (
     </div>
   </article>
 )
+
+Fact.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  icon: PropTypes.object.isRequired,
+  iconSquare: PropTypes.bool,
+}
 
 export default Fact
