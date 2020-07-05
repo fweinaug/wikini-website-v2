@@ -38,8 +38,6 @@ const Changelog = () => {
         {versions.map((version, index) => {
           const changes = Object.values(changelogs[index]).filter(Boolean);
 
-          console.log(changes);
-
           return <Release key={index} version={version.VersionNumber} date={version.ReleaseDate} changes={changes} />
         })}
       </div>
