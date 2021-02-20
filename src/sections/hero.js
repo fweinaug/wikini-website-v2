@@ -6,8 +6,8 @@ import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons"
 
 import HeroImage from "./hero-image"
 
-const Hero = (props) => {
-  return <section className="hero is-primary is-bold is-fullheight">
+const Hero = (props) => (
+  <section className="hero is-primary is-bold is-fullheight">
     <div className="hero-body">
       <div className="container">
         <div className="columns is-vcentered">
@@ -48,7 +48,7 @@ const Hero = (props) => {
       </div>
     </div>
   </section>
-}
+)
 
 Hero.propTypes = {
   scrollToDownload: PropTypes.func.isRequired,

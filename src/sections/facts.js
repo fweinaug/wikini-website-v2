@@ -9,8 +9,8 @@ import {
 import Fact from "../components/fact"
 import Headline from "../components/headline"
 
-const Facts = () => {
-  return <section className="section has-background-white-ter" style={{marginTop: '5rem'}}>
+const Facts = () => (
+  <section className="section has-background-white-ter" style={{marginTop: '5rem'}}>
     <div className="container">
       <Headline title="Wait! There's more"
                 subtitle="If you are still not convinced, see what else Wikini has to offer." />
@@ -38,6 +38,6 @@ const Facts = () => {
       </div>
     </div>
   </section>
-}
+)
 
 export default Facts

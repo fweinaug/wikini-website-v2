@@ -6,8 +6,8 @@ import { faWindows } from "@fortawesome/free-brands-svg-icons"
 import Headline from "../components/headline"
 import DownloadImage from "./download-image"
 
-const Download = (props) => {
-  return <section ref={props.scrollToDownloadRef} className="section" style={{marginTop: '3rem'}}>
+const Download = (props) => (
+  <section ref={props.scrollToDownloadRef} className="section" style={{marginTop: '3rem'}}>
     <Headline title="Get Wikini now" />
     <div className="container" style={{marginTop: '3rem'}}>
       <div className="columns">
@@ -48,7 +48,7 @@ const Download = (props) => {
       </div>
     </div>
   </section>
-}
+)
 
 Download.propTypes = {
   scrollToDownloadRef: PropTypes.shape({ current: PropTypes.any }).isRequired,
