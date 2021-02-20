@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,7 +9,7 @@ import Hero from "../sections/hero"
 import "../components/styles.scss"
 
 const IndexPage = () => {
-  const downloadRef = React.createRef()
+  const downloadRef = useRef()
   const executeScrollToDownload = () => {
     window.scrollTo({ left: 0, top: downloadRef.current.offsetTop, behavior: 'smooth' })
   }
