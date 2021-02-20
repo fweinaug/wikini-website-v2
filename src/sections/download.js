@@ -6,8 +6,8 @@ import { faWindows } from "@fortawesome/free-brands-svg-icons"
 import Headline from "../components/headline"
 import DownloadImage from "./download-image"
 
-const Download = (props) => (
-  <section ref={props.scrollToDownloadRef} className="section mt-6">
+const Download = ({ scrollToDownloadRef }) => (
+  <section ref={scrollToDownloadRef} className="section mt-6">
     <Headline title="Get Wikini now" />
     <div className="container mt-6">
       <div className="columns">

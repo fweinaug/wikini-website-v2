@@ -6,7 +6,7 @@ import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons"
 
 import HeroImage from "./hero-image"
 
-const Hero = (props) => (
+const Hero = ({ scrollToDownload }) => (
   <section className="hero is-primary is-bold is-fullheight">
     <div className="hero-body">
       <div className="container">
@@ -34,7 +34,7 @@ const Hero = (props) => (
               </Typed>
               </p>
             </div>
-            <button className="button is-primary is-large is-inverted is-rounded" onClick={props.scrollToDownload}>
+            <button className="button is-primary is-large is-inverted is-rounded" onClick={scrollToDownload}>
               <span>Get it now!</span>
               <span className="icon is-small">
                 <FontAwesomeIcon icon={faChevronCircleRight} />
