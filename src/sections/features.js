@@ -61,7 +61,7 @@ const Features = () => {
             <div className="tile">
               <div className="tile is-parent is-vertical">
                 <Feature title="Picture browser"
-                         description="Flip through all pictures in the current article and read their description.
+                         description="Flip through all pictures in the current article or see all images in the gallery.
                                       If you would like to keep a picture, just download it to your device." />
                 <Feature title="Favorite articles"
                          description="Create a collection of your favorite articles and access them whenever you need." />
@@ -95,7 +95,7 @@ const Features = () => {
                   <li>Switch to any language in which the article is also available.</li>
                   <li>Share the article with other people or apps.</li>
                   <li>Click on a picture to open the picture browser and flip through all of the article's pictures and
-                    their description.
+                    their description. See all images at once in the gallery.
                   </li>
                 </ul>
               </div>
