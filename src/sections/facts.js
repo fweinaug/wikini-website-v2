@@ -10,7 +10,7 @@ import Fact from "../components/fact"
 import Headline from "../components/headline"
 
 const Facts = () => (
-  <section className="section has-background-white-ter" style={{marginTop: '5rem'}}>
+  <section className="section has-background-white-ter mt-6">
     <div className="container">
       <Headline title="Wait! There's more"
                 subtitle="If you are still not convinced, see what else Wikini has to offer." />

@@ -7,9 +7,9 @@ import Headline from "../components/headline"
 import DownloadImage from "./download-image"
 
 const Download = (props) => (
-  <section ref={props.scrollToDownloadRef} className="section" style={{marginTop: '3rem'}}>
+  <section ref={props.scrollToDownloadRef} className="section mt-6">
     <Headline title="Get Wikini now" />
-    <div className="container" style={{marginTop: '3rem'}}>
+    <div className="container mt-6">
       <div className="columns">
         <div className="column is-two-thirds">
           <div className="content is-medium">

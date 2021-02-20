@@ -32,8 +32,8 @@ const Features = () => {
   data.allFile.edges.forEach(edge => images[edge.node.name] = edge.node);
 
   return (
-    <section className="section" style={{marginTop: '2rem'}}>
-      <div className="container">
+    <section className="section mt-5">
+      <div className="container mb-5">
         <Headline title="Awesome features"
                   subtitle="Wikini has so many great features it's hard to keep track. Which one do you like most?" />
         <div className="tile is-ancestor">

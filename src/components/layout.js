@@ -7,8 +7,7 @@ import "./layout.css"
 const Layout = ({ children }) => (
   <>
     <main>{children}</main>
-    <footer className="section has-background-white-bis"
-            style={{paddingTop: '1.5rem', paddingBottom: '1.5rem'}}>
+    <footer className="section has-background-white-bis py-5">
       <div className="container">
         <nav className="level">
           <div className="level-left">

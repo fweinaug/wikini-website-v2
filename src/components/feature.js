@@ -8,7 +8,7 @@ const Feature = ({ title, description, image = null, children }) => {
   return (
     <article className={ hasImage ? 'tile is-child' : 'tile is-child notification' }>
       {hasImage &&
-        <Img fluid={image.childImageSharp.fluid} className="box is-paddingless" style={{ marginBottom: '1rem' }} />
+        <Img fluid={image.childImageSharp.fluid} className="box is-paddingless mb-4" />
       }
       <p className={ hasImage ? 'title has-text-primary' : 'title' }>{title}</p>
       <p className="subtitle">{description}</p>

@@ -7,7 +7,7 @@ const Fact = ({ title, description, icon, iconSquare = false }) => (
   <article className="tile is-child box" style={{position:'relative', paddingBottom: '3.5rem'}}>
     <p className="title has-text-primary">{title}</p>
     <p className="subtitle has-text-weight-light">{description}</p>
-    <div className="" style={{position: 'absolute', bottom: '15px', left: '50%', marginLeft: '-1.5rem'}}>
+    <div style={{position: 'absolute', bottom: '15px', left: '50%', marginLeft: '-1.5rem'}}>
       <span className="icon is-large has-text-grey">
         <span className="fa-layers fa-fw fa-2x">
           <FontAwesomeIcon icon={iconSquare ? faSquare : faCircle} />
