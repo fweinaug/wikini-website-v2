@@ -3,18 +3,28 @@ name: deploy-website
 on: [push, repository_dispatch]
 
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Gatsby Build
-      uses: jzweifel/gatsby-cli-github-action@master
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+
+    - name: Install Project Dependencies
+      run: npm ci
+
+    - name: Install Gatsby CLI
+      run: npm install -g gatsby-cli@2.12.117
+
+    - name: Build
+      run: gatsby build
       env:
         GITHUB_ACCESS_TOKEN: ${{ secrets.APP_REPO_ACCESS_TOKEN }}
-      with:
-        gatsby-arg: build
+
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
