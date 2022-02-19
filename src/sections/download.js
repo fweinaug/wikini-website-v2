@@ -16,7 +16,7 @@ const Download = ({ scrollToDownloadRef }) => (
             <p className="has-text-weight-light">
               A better and powerful Wikipedia experience is just a click away.
               <br />
-              Get <span className="has-text-weight-semibold has-text-primary">Wikini for Wikipedia</span> on Windows 10 today.
+              Get <span className="has-text-weight-semibold has-text-primary">Wikini for Wikipedia</span> on Windows today.
             </p>
           </div>
           <div className="tags are-medium">
@@ -34,7 +34,7 @@ const Download = ({ scrollToDownloadRef }) => (
             <p className="is-marginless has-text-weight-semibold">Download:</p>
             <a className="button is-link is-medium"
                href="https://www.microsoft.com/store/apps/9nkvw50h59sl" target="_blank" rel="noopener noreferrer"
-               title="Download Wikini for your Windows 10 device, today.">
+               title="Download Wikini for your Windows device, today.">
                 <span className="icon is-small">
                   <FontAwesomeIcon icon={faWindows} />
                 </span>

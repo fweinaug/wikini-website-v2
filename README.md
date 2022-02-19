@@ -2,7 +2,7 @@
 
 # Wikini for Wikipedia Website
 
-Website for the Windows 10 (UWP) app [Wikini for Wikipedia](https://github.com/fweinaug/wikini/), built with [Gatsby](https://www.gatsbyjs.org/) and [Bulma](https://bulma.io/).
+Website for the Windows 10/11 (UWP) app [Wikini for Wikipedia](https://github.com/fweinaug/wikini/), built with [Gatsby](https://www.gatsbyjs.org/) and [Bulma](https://bulma.io/).
 
 During build, it automatically reads the release notes (JSON) from the app's repository and generates an overview page for all releases.
 

@@ -26,7 +26,7 @@ const Hero = ({ scrollToDownload }) => (
                   'those who want to learn something new.',
                   'those who want to go down the rabbit hole.',
                   'those who always want to be right.',
-                  'all your Windows 10 devices.'
+                  'all your Windows devices.'
                 ]}
                 startDelay={350}
                 typeSpeed={50}

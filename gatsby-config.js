@@ -11,7 +11,7 @@ const generateFavicons = (sizes) => {
 module.exports = {
   siteMetadata: {
     title: `Wikini for Wikipedia`,
-    description: `Wikini, the best Wikipedia experience on Windows 10`,
+    description: `Wikini, the best Wikipedia experience on Windows`,
     url: `http://wikiniapp.com`,
     image: `/cover.jpg`,
     author: `@fweinaug`,
